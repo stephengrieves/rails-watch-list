@@ -1,5 +1,12 @@
 .cards {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 8px;
+  margin: 15px;
+  grid-gap: 10px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
 }
