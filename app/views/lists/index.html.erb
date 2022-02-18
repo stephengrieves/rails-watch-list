@@ -12,7 +12,7 @@
   <div class="cards">
     <% @lists.each do |list| %>
       <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://images.unsplash.com/photo-1610308479130-5141d71ba6e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1767&q=80" alt="">
+      <%= cl_image_tag list.photo.key, class:"card-img-top" %>
     <div class="card-body">
       <%= link_to list.name, list_path(list), class:"btn btn-success" %>
     </div>
@@ -20,7 +20,3 @@
     <% end %>
   </div>
 </div>
-
-
-<%= cl_image_tag("san_francisco.jpg",
-      width: 400, height: 300, crop: :fill) %>
