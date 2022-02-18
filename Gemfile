@@ -28,6 +28,9 @@ gem "simple_form"
 #don't share private key
 gem 'dotenv-rails', groups: [:development, :test]
 
+#cloudimages
+gem 'cloudinary', '~> 1.16.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
