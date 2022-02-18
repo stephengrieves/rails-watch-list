@@ -8,12 +8,12 @@
 
 <div class="container mt-5">
 
-  <ul class="cards">
+  <div class="cards">
   <% @list.bookmarks.each do | bookmark | %>
     <div class="card" style="width: 18rem;">
       <%= image_tag bookmark.movie.poster_url, class:"card-img-top"%>
         <div class="card-body">
-      <li> <%= bookmark.movie.title %> </li>
+      <%= bookmark.movie.title %>
         <%= link_to "Remove",
                     bookmark_path(bookmark),
                     method: :delete,
@@ -21,7 +21,7 @@
         </div>
       </div>
     <% end %>
-  </ul>
+  </div>
 <br>
   <%= link_to "Back home", lists_path, class: "btn btn-outline-warning" %>
 
